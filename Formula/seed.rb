@@ -1,4 +1,4 @@
-class Hello < Formula
+class Seed < Formula
     desc "Fern Seed CLI Skeleton"
     homepage "https://github.com/sahil485/homebrew-seed"
     url "https://github.com/sahil485/homebrew-seed/releases/download/v1.0.0/seed-macos-x64.tar.gz"
