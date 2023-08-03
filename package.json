@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "pkg . --targets node14-macos-x64 --output seed"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -21,8 +20,5 @@
   },
   "bin": {
     "seed": "./src/build/cli.js"
-  },
-  "pkg": {
-    "scripts": "src/build/**/*.js"
   }
 }
