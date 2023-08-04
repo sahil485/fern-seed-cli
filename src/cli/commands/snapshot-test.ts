@@ -1,10 +1,16 @@
+import { fileURLToPath } from "url";
 import { Arguments, CommandBuilder } from "yargs";
 
 type Options = {
     docker : string,
-    config : string,
+    config : string, //specify output filepath here? 
     fixture : string,
-    recurse : boolean | undefined
+    recurse : boolean | undefined,
+    local : boolean | undefined,
+    "ir-filepath" : string | undefined,
+    "ir-version" : string | undefined,
+    update: boolean | undefined
+
 }
 
 export const command : string = "test";
@@ -17,7 +23,11 @@ export const builder : CommandBuilder<Options, Options> = (yargs) =>
             docker : {type: 'string', demandOption: true},
             config : {type: 'string', demandOption: true},
             fixture : {type: 'string', demandOption: true},
-            recurse : {type: "boolean", demandOption: false}
+            recurse : {type: "boolean", demandOption: false},
+            local : {type: "boolean", demandOptions: false, default: false},
+            "ir-filepath" : {type: "string", demandOption: false},
+            "ir-version" : {type: "string", demandOption: false},
+            update: {type: "boolean", demandOption: false}
         })
 }
 
