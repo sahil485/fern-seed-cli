@@ -6,5 +6,5 @@ import { hideBin } from 'yargs/helpers'
 const argv = yargs(hideBin(process.argv))
     .commandDir('./commands')
     .strict()
-    .alias({h: 'help', d: 'docker', f: 'fixture', c: 'config', r: 'recurse'})
+    .alias({test: 'snapshot-test', h: 'help', d: 'docker', f: 'fixture', c: 'config', r: 'recurse'})
     .argv

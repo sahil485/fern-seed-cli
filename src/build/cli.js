@@ -9,5 +9,5 @@ const helpers_1 = require("yargs/helpers");
 const argv = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
     .commandDir('./commands')
     .strict()
-    .alias({ h: 'help', d: 'docker', f: 'fixture', c: 'config', r: 'recurse' })
+    .alias({ test: 'snapshot-test', h: 'help', d: 'docker', f: 'fixture', c: 'config', r: 'recurse' })
     .argv;
