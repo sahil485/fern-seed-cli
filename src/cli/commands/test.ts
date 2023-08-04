@@ -1,4 +1,4 @@
-import { Arguments, CommandBuilder, string } from "yargs";
+import { Arguments, CommandBuilder } from "yargs";
 
 type Options = {
     docker : string,

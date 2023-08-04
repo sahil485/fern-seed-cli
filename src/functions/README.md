@@ -1,1 +1,1 @@
-# Write functions/logic to actually run snapshot tests here 
+# Write functions/logic to actually run snapshot tests here depending on CLI input 
